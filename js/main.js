@@ -274,9 +274,9 @@ windows.on('scroll', function() {
    Services Tab
 	------------------------------ */
 
-	setTimeout(() => {
-		$('#exampleModal').modal()
-	}, 2000)
+	// setTimeout(() => {
+	// 	$('#exampleModal').modal()
+	// }, 2000)
 
 
 	const selector = '.left-menu li';
@@ -324,6 +324,55 @@ windows.on('scroll', function() {
 		$(serviceDetails).removeClass('visible');
 		$(`.service-details-section div:nth-child(${$(this).index() + 1})`).addClass('visible')
 	});
+
+	window.addEventListener("hashchange", function(){
+		$(selector).removeClass('active');
+	
+		$(".app-eng-details").removeClass('visible');
+		$(".tech-consult-details").removeClass('visible');
+		$(".testing-details").removeClass('visible');
+		$(".web-dev-details").removeClass('visible');
+		$(".mobile-dev-details").removeClass('visible');
+		$(".dev-ops-details").removeClass('visible');
+
+		window.scrollTo({
+			top: 250,
+			behavior: "smooth"
+    });
+
+		if(location.hash === "#Application%20Engineering"){
+			$(".app-eng").addClass('active');
+			$(`.app-eng-details`).addClass('visible')
+			return 
+		}
+		if(location.hash === "#Technology%20consulting"){
+			$(".tech-consult").addClass('active');
+			$(`.tech-consult-details`).addClass('visible')
+			return 
+		}
+		if(location.hash === "#Testing-as-a-Service"){
+			$(".testing").addClass('active');
+			$(".testing-details").addClass('visible');
+			return 
+		}
+		if(location.hash === "#Web%20development"){
+			$(".web-dev").addClass('active');
+			$(".web-dev-details").addClass('visible');
+			return 
+		}
+		if(location.hash === "#Mobile%20development"){
+			$(".mobile-dev").addClass('active');
+			$(".mobile-dev-details").addClass('visible');
+			return 
+		}
+		if(location.hash === "#DevOps-as-a-service"){
+			$(".dev-ops").addClass('active');
+			$(".dev-ops-details").addClass('visible');
+			return 
+		}
+		
+
+	}, false);
 
 	var sync1 = $(".owl-carousel");
 	var sync2 = $(".owl-carousel2"); 
