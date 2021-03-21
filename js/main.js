@@ -275,7 +275,7 @@ windows.on('scroll', function() {
 	------------------------------ */
 
 	setTimeout(() => {
-		// $('#exampleModal').modal()
+		$('#exampleModal').modal()
 	}, 2000)
 
 
@@ -387,4 +387,8 @@ function scrollToKnowMore(){
 		top: offsetPosition,
 		behavior: "smooth"
 	});
+}
+
+function showSentinelCert(){
+	$('#exampleModal2').modal()
 }

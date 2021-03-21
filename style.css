@@ -565,7 +565,7 @@ div#preloader {
 /*----------------------------------------*/
 .mobile-menu-area {
     background: #fff none repeat scroll 0 0;
-    padding: 10px 0px ;
+    padding: 5px 0px ;
 }
 .mean-container .mean-nav {
     float: left;
@@ -581,6 +581,7 @@ div#preloader {
     text-transform: uppercase;
     font-weight: 500;
 }
+
 .mean-container a.meanmenu-reveal:hover {
     color:#3078fb
 }
@@ -818,7 +819,7 @@ div#preloader {
 }
 .about-content {
     /* background: #062241; */
-    padding: 40px 40px 100px 100px;
+    padding: 20px 40px 0px 10px;
     overflow: hidden;
 }
 .about-content p {
@@ -1713,6 +1714,18 @@ transition: 0.3s;
 .intro-area .slide-content {
     margin-top: 30px;
 }
+/* .intro-area-2 .slider-content,
+.intro-area-3 .slider-content {
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 50%;
+    z-index: 3;
+    left: 0;
+    margin: 0 auto;
+    margin-top: -80px;
+} */
+
 .intro-area-2 .slider-content,
 .intro-area-3 .slider-content {
     position: absolute;
@@ -3254,7 +3267,7 @@ span.email-notes{
 /* Custom CSS */
 .about-section-image{
     /* margin-top: 50px; */
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 .center{
     text-align: center;
@@ -3461,4 +3474,47 @@ select {
 video {
     width: 100%;
     height: 100%;
+}
+
+.hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 400px ) {
+   .head-title{
+        background: rgba(5, 5, 12, 0.3) !important;
+        color: #ffffff !important;
+   }
+    .intro-area-2{
+        /* background-color: #00ACED; */
+        padding-bottom: 20px;
+        background-image: url('img/background/hero-thumbnail.png');
+        object-fit: cover;
+    }
+    .intro-area-2 .slider-content,
+    .intro-area-3 .slider-content {
+        position: relative !important;
+      
+        right: 0;
+        text-align: left;
+        /* top: 50%; */
+        z-index: 3;
+        left: 0;
+        margin: 0 auto;
+        margin-top: -80px;
+    }
+    .slider-content{
+        position: relative im !important;
+        margin-top: -30px !important;
+        font-size: 16px  !important;
+        min-width: 100%;
+    }
+    .slider-content > .title2{
+        /* margin-top: -30px !important; */
+        font-size: 16px  !important;
+    }
+    .intro-area-2  video{
+        object-fit: cover;
+       visibility: hidden;
+    }
 }
