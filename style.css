@@ -3518,3 +3518,28 @@ video {
        visibility: hidden;
     }
 }
+
+.team-member-img{
+    /* background-image: url('img/team/chhavi.jpeg'); */
+   
+    background-position: center;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    object-position: 50% 0%;
+}
+
+.review-vid{
+    object-fit: contain;
+    width: 'auto'; 
+    height: 275px;
+    border-radius: 5px;
+}
+
+.review-vid-resize1{
+    height: 275px;
+}
+
+.review-vid-resize{
+    height: 362px;
+}

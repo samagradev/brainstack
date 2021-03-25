@@ -325,6 +325,16 @@ windows.on('scroll', function() {
 		$(`.service-details-section div:nth-child(${$(this).index() + 1})`).addClass('visible')
 	});
 
+
+	var resizeElement2 = document.getElementById('review-card')
+  addResizeListener(resizeElement2, function(){
+		const el = document.querySelectorAll('.review-vid-resize1')
+		el.forEach(element => {
+			const style  = `height: ${$('#review-card').height()}px;`;
+			element.setAttribute('style', style);
+		})
+	});
+
 	window.addEventListener("hashchange", function(){
 		$(selector).removeClass('active');
 	
