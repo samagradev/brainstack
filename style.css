@@ -3532,12 +3532,13 @@ video {
 .review-vid{
     object-fit: contain;
     width: 'auto'; 
-    height: 275px;
+    height: 270px;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .review-vid-resize1{
-    height: 275px;
+    height: 270px;
 }
 
 .review-vid-resize{
