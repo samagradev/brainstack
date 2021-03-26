@@ -413,6 +413,12 @@ windows.on('scroll', function() {
 	});
 	
 
+	$('.slick-slide-ani').slick({
+		autoplay: true,
+		autoplaySpeed: 1000,
+		// centerMode: true,
+		slidesToShow: 1
+	});
 
 })(jQuery); 
 
